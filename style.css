@@ -1,0 +1,84 @@
+/* 1º Procediento de responsividade: Para fazer as margens sumirem.*/
+* { 
+    margin: 0px;
+    padding:0px;
+}
+
+/* Cores sendo inseridas pelo nome da variável*/
+body {
+    background-color: #b3bafc;
+}
+
+/* 2º Procediento de responsividade: margens, bordas e definição de largura min e máx de telas. 320px e 800px*/
+main {
+    background-color: #b3bafc;;
+    padding: 20px;
+    border-radius: 10px;
+
+    min-width: 320px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* 3º Procediento de responsividade: Fazer as imagens ocuparem 100% do espaço determinado.*/
+    img {
+        width: 100%;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    header {
+        background-color:black;
+        min-height: 0.5px;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    nav { 
+        background-color: rgb(81, 134, 233);
+        padding: 10px;
+        text-align: center;
+    }
+    
+    nav > a {
+        color: #000747;;
+        padding: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        transition-duration: 0.5s;
+    }
+    
+    
+    nav > a:hover {
+        background-color: rgb(42, 73, 211);
+        color: rgb(41, 20, 134);
+    }
+    
+
+
+#containerTotal { /*<div> de forma aninhada (um elemento dentro do outro). utilização o CSS para implementar o posicionamento entre esses elementos.*/
+    padding: 0px 20px 30px; /*define a distância entre o conteúdo de um elemento e suas bordas*/
+    display: flex; /*flex é uma propriedade do CSS3 que permite organizar elementos em linhas ou colunas. */
+    flex-direction: column; /*é uma propriedade do CSS que define a direção em que os elementos flex são exibidos*/
+    background-color: #b3bafc;; /*cor de fundo da div*/
+  }
+  
+  .containerDivs { /*Utilizamos o CSS para ajustar o posicionamento das tags <div> */
+    display: flex; /*flex é uma propriedade do CSS3 que permite organizar elementos em linhas ou colunas. */
+    flex-direction: row; /*row é uma propriedade do CSS que define que os elementos flex serão exibidos em linha, da esquerda para a direita*/
+    justify-content: space-between; /*distribui e alinha os elementos filhos ao longo do eixo principal de um container. */
+  }
+  
+  .demoDiv { /*Através desta classe o elemento <div> vai receber as propriedades implementada pelo código CSS.*/
+    width: 30%; /*é uma propriedade que define que a largura de um elemento será 30% da largura do elemento que o contém. */
+    border: 5px outset rgb(101, 110, 236); /*é uma propriedade do CSS que define a distância entre um elemento e a imagem que o representa, e aplica cor para a borda. */
+    background-color: rgb(27, 30, 197); /*cor de fundo da div*/
+    font-weight: 600; /*define a intensidade da fonte, ou seja, o quão claro ou escuro será o texto. */
+    text-align: center; /*é uma propriedade do CSS que centraliza o conteúdo de elementos textuais, como parágrafos e títulos.*/
+  }
+
+  h1 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  }

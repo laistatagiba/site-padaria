@@ -1,0 +1,117 @@
+/*obs.: As divs 'area' e 'formulario' são opcionais, utilizadas apenas para centralização e fixação do formulário na tela./
+/*Comentários importantes
+fieldset: Definimos o tamanho(width, height), e a cor de fundo (background-color)
+legend: Alteramos a font (font-family) e colocamos o texto em negrito(font-weight)
+input: Definimos as cores de fundo (background-color) e o posicionamento (varia de acordo com o seu formulário)
+textarea: adicionamos a cor de fundo (background-color)
+obs.: no input.btn_submit (botão) foi utilizado a tag 'border-style' com o atributo 'dashed' , isso é pra fazer a borda tracejada do botão. */
+#area
+{
+position: relative;
+left:37%;
+top:29%;
+width:320px;
+height:270px;
+}
+
+#area #formulario
+{
+position: absolute;
+display:block;
+}
+
+fieldset /*fieldset , e alterar a cor de fundo, depois vamos colorir os campos de texto, a textarea e o submit (botão). */
+{
+background-color: rgb(190, 90, 221);
+width:300px;
+height:250px;
+}
+
+#area
+{ position:relative;
+left:37%;
+top:29%;
+width:320px;
+height:270px;
+}
+
+#area #formulario
+{
+position: absolute;
+display:block;
+}
+
+fieldset
+{
+width: 300px;
+height: 250px;
+}
+
+legend
+{
+font-style:bold;
+font-family: "Segoe UI", "Arial", "Times New Roman";
+}
+
+#area
+{
+position:relative;
+left:37%;
+top: 29%;
+width: 320px; height:270px;
+}
+
+#area #formulario
+{
+position: absolute;
+display:block;
+}
+
+fieldset
+{
+width:300px;
+height: 250px;
+}
+
+legend
+{
+font-style:bold;
+font-family: "Segoe UI";
+}
+
+#formulario label
+{
+position: absolute;
+left:19px; margin-right:5px;
+}
+
+#formulario input.campo_nome
+{
+background-color: #ffffff; position: absolute;
+left:95px;
+top: 23px;
+width:225px;
+}
+
+#formulario input.campo_email
+{
+background-color: #ffffff; position: absolute;
+left:95px;
+margin-top: 2px;
+width:225px;
+}
+
+#formulario textarea.msg
+{
+position: absolute;
+background-color: #ffffff;
+}
+
+#formulario input.btn_submit
+{
+position: absolute;
+bottom: 0.5em;
+right:10px;
+background-color: #dfabe4;
+}
+
